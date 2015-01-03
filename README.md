@@ -9,7 +9,7 @@ purpose was to allow for users of the
 MUD design system to execute unsafe Python-like code in a safe way. It
 was since removed from the Evennia distribution since 
 
-1. It does not work anymore
+1. It does not work anymore (Python2.7 made changes to asp. Fixable but shows the fragility of the system)
 1. It has at least one exploitable security hole: `a=[1];[a.append(x) for x in
 a]`. This will cause an infinite loop that eats all memory and there
 is nothing the system can do to stop it - even when using Process
